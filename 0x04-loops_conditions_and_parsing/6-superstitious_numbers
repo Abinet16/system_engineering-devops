@@ -1,11 +1,20 @@
-#!/bin/bash
-count=1
-while [ $count -le 20 ]; do
-    case $count in
-        4) echo -e "4\nbad luck from China" ;;
-        9) echo -e "9\nbad luck from Japan" ;;
-        17) echo -e "17\nbad luck from Italy" ;;
-        *) echo $count ;;
-    esac
-    ((count++))
+#!/usr/bin/env bash
+# Special cultural meanings on 4, 9, and 17
+
+i=1
+while [ $i -le 20 ]
+do
+  echo $i
+  case $i in
+    4)
+      echo "bad luck from China"
+      ;;
+    9)
+      echo "bad luck from Japan"
+      ;;
+    17)
+      echo "bad luck from Italy"
+      ;;
+  esac
+  ((i++))
 done
