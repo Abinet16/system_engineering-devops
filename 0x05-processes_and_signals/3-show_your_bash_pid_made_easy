@@ -1,0 +1,4 @@
+
+# 3-show_your_bash_pid_made_easy
+# This script shows PIDs and command names for processes containing 'bash'
+pidof -x bash | xargs -n1 -I{} echo {} bash
