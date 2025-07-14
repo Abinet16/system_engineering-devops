@@ -1,0 +1,3 @@
+# 5-dont_stop_me_now
+# This script kills the to_infinity_and_beyond script
+kill $(pgrep -f 4-to_infinity_and_beyond)
