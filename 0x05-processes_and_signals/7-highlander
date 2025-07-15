@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
-# 7-highlander
-# This script handles SIGTERM with a custom message
-trap "echo 'I am invincible!!!'" SIGTERM
+# This script prints "To infinity and beyond" every 2 seconds,
+# and prints "I am invincible!!!" when receiving a SIGTERM signal.
+
+trap 'echo "I am invincible!!!"' SIGTERM
+
 while true
-  do
+do
     echo "To infinity and beyond"
     sleep 2
-  done
+done
