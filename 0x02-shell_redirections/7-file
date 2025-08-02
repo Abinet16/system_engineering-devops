@@ -1,4 +1,2 @@
 #!/bin/bash
-# Creates a file with a complex name and writes "Best School" followed by a newline
-
 echo "Best School" > "*\\'\"Best School\"\\'*\$\\?*****:)"
